@@ -1,4 +1,11 @@
-// moddules for node and express
+/* 
+    Filename: app.js
+    Name: Fawzia Saad
+    StudentID: 301296233
+    Wep app: COMP229-S2023-Midterm-301296233
+*/
+
+// modules for node and express
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
@@ -29,7 +36,6 @@ let app = express();
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
 
-// uncomment after placing your favicon in /client
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
