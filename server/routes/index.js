@@ -1,9 +1,9 @@
-// modules required for routing
+// Modules required for routing
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-// define the game model
+//Define the game model
 let book = require('../models/books');
 
 /* GET home page. wildcard */

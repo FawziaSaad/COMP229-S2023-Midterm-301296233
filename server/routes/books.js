@@ -28,11 +28,6 @@ router.get('/', (req, res, next) => {
 
 //  GET the Book Details page in order to add a new Book
 router.get('/add', (req, res, next) => {
-
-
-   /*****************
-    * ADD CODE HERE *
-    *****************/
    try {
     res.render('books/details', 
     
@@ -46,11 +41,6 @@ router.get('/add', (req, res, next) => {
 
 // POST process the Book Details page and create a new Book - CREATE
 router.post('/add', (req, res, next) => {
-
-
-   /*****************
-    * ADD CODE HERE *
-    *****************/
    let newBook = book({
     "title": req.body.title,
     "description": req.body.description,
@@ -71,11 +61,6 @@ try {
 
 // GET the Book Details page in order to edit an existing Book
 router.get('/edit/:id', async (req, res, next) => {
-
-
-   /*****************
-    * ADD CODE HERE *
-    *****************/
    let id = req.params.id;
 
     try {
@@ -92,11 +77,6 @@ router.get('/edit/:id', async (req, res, next) => {
 
 // POST - process the information passed from the details form and update the document
 router.post('/edit/:id', async (req, res, next) => {
-
-
-   /*****************
-    * ADD CODE HERE *
-    *****************/
    let id = req.params.id;
 
     let updatedBook = {
@@ -120,11 +100,6 @@ router.post('/edit/:id', async (req, res, next) => {
 
 // GET - process the delete by user id
 router.get('/delete/:id', async (req, res, next) => {
-
-
-   /*****************
-    * ADD CODE HERE *
-    *****************/
    let id = req.params.id;
 
   try {
